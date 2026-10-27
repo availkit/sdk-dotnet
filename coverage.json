@@ -1,0 +1,282 @@
+{
+  "version": "0.1.1",
+  "workspaceOperations": 34,
+  "publicOperations": 7,
+  "operations": {
+    "createResource": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/resources",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "listResources": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/resources",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "setHours": {
+      "method": "PUT",
+      "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}/hours",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getHours": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}/hours",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "createOffering": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/offerings",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "listOfferings": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/offerings",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "availability": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/availability",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "book": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/bookings",
+      "status": "supported",
+      "idempotencyKey": true
+    },
+    "listBookings": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/bookings",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "cancel": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/bookings/{bookingId}/cancel",
+      "status": "supported",
+      "idempotencyKey": true
+    },
+    "events": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/events",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getResource": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "updateResource": {
+      "method": "PUT",
+      "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getOffering": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/offerings/{offeringId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "updateOffering": {
+      "method": "PUT",
+      "path": "/v1/workspaces/{workspaceId}/offerings/{offeringId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getBooking": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/bookings/{bookingId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "createWebhook": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/webhooks",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "listWebhooks": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/webhooks",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "disableWebhook": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/webhooks/{subscriptionId}/disable",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "listWebhookDeliveries": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/webhooks/{subscriptionId}/deliveries",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getUsage": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/usage",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "rescheduleBooking": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/bookings/{bookingId}/reschedule",
+      "status": "supported",
+      "idempotencyKey": true
+    },
+    "archiveResource": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}/archive",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "archiveOffering": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/offerings/{offeringId}/archive",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "pruneHistory": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/maintenance/history",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "createCustomer": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/customers",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "listCustomers": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/customers",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getCustomer": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/customers/{customerId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "replaceCustomer": {
+      "method": "PUT",
+      "path": "/v1/workspaces/{workspaceId}/customers/{customerId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "archiveCustomer": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/customers/{customerId}/archive",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "eraseCustomer": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/customers/{customerId}/erase",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "pruneExpiredReplays": {
+      "method": "POST",
+      "path": "/v1/workspaces/{workspaceId}/maintenance/expired-replays",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "getPublicPage": {
+      "method": "GET",
+      "path": "/v1/public/pages/{pageId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "listPublicOfferings": {
+      "method": "GET",
+      "path": "/v1/public/pages/{pageId}/offerings",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "publicAvailability": {
+      "method": "GET",
+      "path": "/v1/public/pages/{pageId}/availability",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "bookPublic": {
+      "method": "POST",
+      "path": "/v1/public/pages/{pageId}/bookings",
+      "status": "supported",
+      "idempotencyKey": true
+    },
+    "getPublicBooking": {
+      "method": "GET",
+      "path": "/v1/public/pages/{pageId}/bookings/{bookingId}",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "cancelPublicBooking": {
+      "method": "POST",
+      "path": "/v1/public/pages/{pageId}/bookings/{bookingId}/cancel",
+      "status": "supported",
+      "idempotencyKey": true
+    },
+    "reschedulePublicBooking": {
+      "method": "POST",
+      "path": "/v1/public/pages/{pageId}/bookings/{bookingId}/reschedule",
+      "status": "supported",
+      "idempotencyKey": true
+    },
+    "getBookingPage": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/booking-page",
+      "status": "supported",
+      "idempotencyKey": false
+    },
+    "replaceBookingPage": {
+      "method": "PUT",
+      "path": "/v1/workspaces/{workspaceId}/booking-page",
+      "status": "supported",
+      "idempotencyKey": false
+    }
+  },
+  "excluded": {
+    "humanAccount": "Same-origin browser account/email/passkey/session ceremonies; no native account APIs or credential issuance.",
+    "recovery": "Deferred and disabled.",
+    "health": "Operator HTTP endpoints; outside integration SDK."
+  },
+  "openapi_sha256": "6e126d6856c9d07f7af49137c453f7fba0d715fb4e957937fe47cb4bc8d55aa5",
+  "supported_projection_sha256": "62ed19c668e35d7b1d4d706cbd1812e245dca01e89d4c24cf59fbf4406264740",
+  "unsupported_optional": {
+    "recovery_v2_profile": {
+      "method": "GET",
+      "path": "/v2/human/recovery/profile",
+      "reason": "separate same-origin browser recovery"
+    },
+    "recovery_v2_start": {
+      "method": "POST",
+      "path": "/v2/human/recovery/start",
+      "reason": "separate same-origin browser recovery"
+    },
+    "recovery_v2_finish": {
+      "method": "POST",
+      "path": "/v2/human/recovery/finish",
+      "reason": "separate same-origin browser recovery"
+    },
+    "getBusinessExportPage": {
+      "method": "GET",
+      "path": "/v1/workspaces/{workspaceId}/export",
+      "reason": "unsupported optional business export"
+    }
+  }
+}
