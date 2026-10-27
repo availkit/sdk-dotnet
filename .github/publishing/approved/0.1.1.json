@@ -1,0 +1,9 @@
+{
+  "ecosystem": "dotnet",
+  "manifest_sha256": "44a0aa86887bf0a62f1540524f645b085cb9912be135b7f1230a3ddbc938b74b",
+  "package": "AvailKit",
+  "schema": 1,
+  "source_commit": "d8e6dc63882574fe95d0b340456604de8c3ba7f3",
+  "tag": "v0.1.1",
+  "version": "0.1.1"
+}
